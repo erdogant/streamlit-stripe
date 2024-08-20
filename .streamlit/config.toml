@@ -1,0 +1,10 @@
+[theme]
+base="dark"
+
+# This will always show the rerun button after making changing in the code.
+[server]
+fileWatcherType = "poll"
+
+# Opt-out for user data collection. GDPR policy in Europe.
+[browser]
+gatherUsageStats = false

@@ -1,2 +1,1 @@
-# streamlit-stripe
-Streamlit Stripe
+# My Project
