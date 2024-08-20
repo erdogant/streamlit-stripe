@@ -9,8 +9,7 @@
 [![Medium](https://img.shields.io/badge/Medium-Blog-green)](https://towardsdatascience.com/what-are-streamlit-stripe-loadings-and-biplots-9a7897f2e559)
 ![GitHub Repo stars](https://img.shields.io/github/stars/erdogant/streamlit-stripe)
 ![GitHub repo size](https://img.shields.io/github/repo-size/erdogant/streamlit-stripe)
-[![Donate](https://img.shields.io/badge/Support%20this%20project-grey.svg?logo=github%20sponsors)](https://erdogant.github.io/streamlit-stripe/pages/html/Documentation.html#)
-<!---[![BuyMeCoffee](https://img.shields.io/badge/buymea-coffee-yellow.svg)](https://www.buymeacoffee.com/erdogant)-->
+[![BuyMeCoffee](https://img.shields.io/badge/buymea-coffee-yellow.svg)](https://buymeacoffee.com/erdogant)
 <!---[![Coffee](https://img.shields.io/badge/coffee-black-grey.svg)](https://erdogant.github.io/donate/?currency=USD&amount=5)-->
 
 
