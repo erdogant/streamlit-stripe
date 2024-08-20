@@ -44,17 +44,20 @@ def page_validate():
                 st.caption('Enter a valid email address and press again.')
             else:
                 st.caption('Checking subscription..')
-                # Initialize stripe
-                key = st.secrets["strip_api"]["key"]
-                # Add key to stripe
-                stripe.api_key = key
-                # Setup client
-                client = StripeClient(key)
-                # Get subscriptions
-                subscription_dict = get_subscriptions(client, stripe)
-                # Check mail
-                if np.any(list(map(lambda x: subscription_dict[x]['mail']==usermail, subscription_dict.keys()))):
-                    st.success('Valid!')
+                try:
+                    # Initialize stripe
+                    key = st.secrets["strip_api"]["key"]
+                    # Add key to stripe
+                    stripe.api_key = key
+                    # Setup client
+                    client = StripeClient(key)
+                    # Get subscriptions
+                    subscription_dict = get_subscriptions(client, stripe)
+                    # Check mail
+                    if np.any(list(map(lambda x: subscription_dict[x]['mail']==usermail, subscription_dict.keys()))):
+                        st.success('Valid!')
+                except:
+                    st.info('Provide environment variables and other secrets to your app.')
 
 
 # %%
