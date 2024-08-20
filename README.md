@@ -13,12 +13,9 @@
 
 
 
+**Star this repo if you like it! ⭐️**
 
 Creating an web-based application using Streamlit is great. With just one small step, you can also add a subscription model using Stripe. Here I will show you how.
-
-
-# 
-**Star this repo if you like it! ⭐️**
 
 
 ## Documentation
