@@ -32,7 +32,7 @@ def main():
 
 # %%
 def documentation():
-    with st.form("Documentation", border=True):
+    with st.container(border=True):
         st.write('Read more details on how to create a large Streamlit application over here: [Medium](https://medium.com/towards-data-science/what-you-need-to-know-to-build-large-streamlit-applications-with-stripe-subscriptions-and-firestore-8b76f6370cb2).')
         st.write('Read more details on how to integrate Stripe into your Streamlit Application over here: [Medium](https://medium.com/towards-data-science/what-you-need-to-know-to-build-large-streamlit-applications-with-stripe-subscriptions-and-firestore-8b76f6370cb2).')
 
