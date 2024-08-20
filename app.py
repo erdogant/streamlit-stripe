@@ -6,6 +6,8 @@ import streamlit as st
 import streamlit.components.v1 as components
 import re
 import numpy as np
+import stripe
+from stripe import StripeClient
 
 
 # %% Main
@@ -116,7 +118,7 @@ def stripe_payment_link(border=True):
 
                     <stripe-buy-button
                       buy-button-id="buy_btn_1PhdGlJMk7E9vbKm85BK2tke"
-                      publishable-key="pk_live_XXX"
+                      publishable-key="pk_live_51PCRE0JMk7E9vbKmbF9HDjTWn55KRy5agRkuSBIR189izujL3DadWYKxYozwzmxb4rnYoR2sX96xA9nt2sz4uO8S008lETii6p"
                     >
                     </stripe-buy-button>
                     """
@@ -131,7 +133,7 @@ def stripe_payment_link(border=True):
 
                     <stripe-buy-button
                       buy-button-id="buy_btn_1PhdKSJMk7E9vbKmHgm8nJgE"
-                      publishable-key="pk_live_XXX"
+                      publishable-key="pk_live_51PCRE0JMk7E9vbKmbF9HDjTWn55KRy5agRkuSBIR189izujL3DadWYKxYozwzmxb4rnYoR2sX96xA9nt2sz4uO8S008lETii6p"
                     >
                     </stripe-buy-button>
                     """
