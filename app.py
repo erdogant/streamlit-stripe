@@ -16,16 +16,25 @@ def main():
     st.title("Streamlit-Stripe Subscription")
 
     # Create tabs
-    tabs = st.tabs(['Validate', 'Subscribe'])
+    tabs = st.tabs(['Validate', 'Subscribe', 'Documentation'])
     with tabs[0]:
         page_validate()
     with tabs[1]:
         # page_subscribe()
         stripe_payment_link()
+    with tabs[2]:
+        # page_subscribe()
+        documentation()
 
 
     # Footer
     st.caption("streamlit-stripe v1.0.0")
+
+# %%
+def documentation():
+    with st.form("Documentation", border=True):
+        st.write('Read more details on how to create a large Streamlit application over here: [Medium](https://medium.com/towards-data-science/what-you-need-to-know-to-build-large-streamlit-applications-with-stripe-subscriptions-and-firestore-8b76f6370cb2).')
+        st.write('Read more details on how to integrate Stripe into your Streamlit Application over here: [Medium](https://medium.com/towards-data-science/what-you-need-to-know-to-build-large-streamlit-applications-with-stripe-subscriptions-and-firestore-8b76f6370cb2).')
 
 
 # %%
@@ -57,7 +66,7 @@ def page_validate():
                     if np.any(list(map(lambda x: subscription_dict[x]['mail']==usermail, subscription_dict.keys()))):
                         st.success('Valid!')
                 except:
-                    st.info('Provide environment variables and other secrets to your app.')
+                    st.info('First add your Stripe Secret API key to the environment.')
 
 
 # %%
