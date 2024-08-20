@@ -1,6 +1,5 @@
 # streamlit-stripe
 
-[![Python](https://img.shields.io/pypi/pyversions/streamlit-stripe)](https://img.shields.io/pypi/pyversions/streamlit-stripe)
 [![LOC](https://sloc.xyz/github/erdogant/streamlit-stripe/?category=code)](https://github.com/erdogant/streamlit-stripe/)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](https://github.com/erdogant/streamlit-stripe/blob/master/LICENSE)
 [![Forks](https://img.shields.io/github/forks/erdogant/streamlit-stripe.svg)](https://github.com/erdogant/streamlit-stripe/network)
