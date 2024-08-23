@@ -23,7 +23,6 @@ def main():
         # page_subscribe()
         stripe_payment_link()
     with tabs[2]:
-        # page_subscribe()
         documentation()
 
 
